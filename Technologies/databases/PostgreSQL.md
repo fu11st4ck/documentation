@@ -3,7 +3,7 @@ We use `person` table with `first_name`, `last_name`, `gender`, `email`, `date_o
 
 ## Sample queries
 ### Create `Person` table:
-Below is the sample query to create person tatble with `id`, `first_name`, `last_name`, `email`, `gender`, `date_of_birth` and `country_of_birth`. 
+Below is the sample query to create person tatble with `id`, `first_name`, `last_name`, `email`, `gender`, `date_of_birth` and `country_of_birth`.
 ```sql
 CREATE TABLE person (
 	id BIGSERIAL NOT NULL PRIMARY KEY,
@@ -15,6 +15,15 @@ CREATE TABLE person (
 	country_of_birth VARCHAR(50)
 );
 ```
+
+<b>Explanation:</b>\
+`CREATE TABLE person();`: is a command where `person` is a name of the table\
+`id`, `first_name`, `last_name`, `email`, `gender`, `date_of_birth` and `country_of_birth`: is the column name\
+`BIGSERIAL`: is a datatype, and it will store numbers from 1 to 9223372036854775807 (8 Bytes) for the column\
+`VARCHAR(50)`: is a datatype, and it will store string with length of given parameter\
+`DATE`: is a datatype, it will store `date` in `YYYY-MM-DD` format\
+`NOT NULL`: it will restrict user to assign `null` or `undefined` value to thais column\
+`PRIMARY KEY`: create any column as a primary key to identify the row (record of the data) uniqueness
 
 ### Insert data into `person` table:
 Below is the sample query to insert data into all columns of the `person` table.
